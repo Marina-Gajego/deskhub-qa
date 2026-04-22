@@ -29,3 +29,13 @@ tests/cypress/cypress/videos/
 # OS / editors
 .idea/
 .vscode/
+
+# Extra logs and temporary files
+*_log.txt
+*.txt
+npm
+nodemon
+deskhub*
+!README.md
+!docs/**/*.md
+!REQUISITOS.md
