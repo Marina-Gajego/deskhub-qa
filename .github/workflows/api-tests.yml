@@ -26,9 +26,8 @@ jobs:
       - name: Run API Tests
         uses: cypress-io/github-action@v6
         with:
-          # Inicia apenas o backend para os testes de API
           start: npm run start:backend
-          # Aguarda o backend responder com 200 OK na rota do swagger
           wait-on: 'http://localhost:3001/api/docs/openapi.json'
-          # Roda apenas os specs de API
           spec: cypress/e2e/api/**/*.cy.js
+        env:
+          CYPRESS_BASE_URL: http://localhost:3001
