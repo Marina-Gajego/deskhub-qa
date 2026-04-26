@@ -1,6 +1,6 @@
-# DeskHub QA Playground
+# DeskHub QA
 
-Aplicacao web full stack para reserva de mesas em escritorios, desenvolvida como base de estudos para QA manual, QA automatizado, automacao funcional e testes de performance.
+Aplicacao web full stack para reserva de mesas em escritorios, desenvolvida como base de estudos para testes manuais, automatizados, funcional e testes performance.
 
 ## Visao Geral
 
@@ -22,7 +22,8 @@ Este repositorio foi montado para servir como ambiente pratico de estudos em:
 - automacao web;
 - automacao de API;
 - testes de carga e performance;
-- exploracao de bugs logicos intencionais.
+- exploracao de bugs logicos intencionais;
+- integração com CI/CD com o GitHub Actions.
 
 ## Stack Tecnica
 
@@ -44,7 +45,7 @@ Este repositorio foi montado para servir como ambiente pratico de estudos em:
 ## Estrutura do Projeto
 
 ```text
-deskhub-qa-playground/
+deskhub-qa/
 ├── .github/
 │   └── workflows/
 ├── backend/
@@ -208,6 +209,16 @@ Execucao do script principal:
 k6 run k6/scenarios/api/load_test.js
 ```
 
+### GitHub Actions (CI/CD)
+
+O projeto conta com pipelines de automação para garantir a qualidade em cada alteração:
+
+- `API Tests`: Executa os testes de contrato e regras de negócio via Cypress.
+- `Web Tests`: Executa os fluxos E2E de interface.
+- `Performance Tests`: Roda os scripts de carga do k6.
+
+Os workflows podem ser disparados manualmente via `workflow_dispatch` na aba Actions do GitHub.
+
 ## Documentacao
 
 - requisitos: [docs/REQUISITOS.md](docs/REQUISITOS.md)
@@ -224,4 +235,4 @@ k6 run k6/scenarios/api/load_test.js
 
 ## Observacao Final
 
-O DeskHub QA Playground foi desenhado para ser simples de entender, facil de resetar e util para praticar qualidade de software em um contexto controlado.
+O DeskHub QA foi desenhado para ser simples de entender, facil de resetar e util para praticar qualidade de software em um contexto controlado.

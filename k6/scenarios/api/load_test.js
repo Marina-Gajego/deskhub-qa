@@ -38,7 +38,7 @@ export default function () {
   const registerRes = http.post(`${BASE_URL}/auth/register`, userPayload, baseParams);
   check(registerRes, { 'Registro com sucesso (201)': (r) => r.status === 201 });
 
-  // 3. Login (Teste de CPU por causa do Bcrypt)
+  // 3. Login
   const loginPayload = JSON.stringify({
     email: `k6-${uniqueId}@test.local`,
     password: 'Password123',

@@ -8,7 +8,7 @@ Este documento registra os resultados de uma sessao de testes exploratorios base
 |:--- |:--- |
 | **Data e horario de inicio** | 22/04/2026 21:00 |
 | **Nome do testador** | Marina Gajego |
-| **Test Charter** | **Charter:** Explorar as regras de criacao de reservas e autenticacao, utilizando heuristicas de valores limites (Boundary Value) e acoes contrarias as regras de negocio para identificar falhas logicas e de UX. |
+| **Test Charter** | **Charter:** Explorar as regras de criacao de reservas e autenticacao, utilizando heuristicas de valores limites e acoes contrarias as regras de negocio para identificar falhas logicas e de UX. |
 | **Tamanho da sessao** | 30 minutos |
 
 ---
@@ -36,7 +36,6 @@ Este documento registra os resultados de uma sessao de testes exploratorios base
 ## Perguntas
 - O sistema deveria permitir que um usuario cancele uma reserva que ja aconteceu (no passado)?
 - Existe um limite maximo de dias no futuro para fazer uma reserva (ex: posso reservar para 2030)?
-- O campo de e-mail e case-sensitive? (ex: `User@QA.com` e `user@qa.com` sao a mesma pessoa?)
 
 ---
 
@@ -45,6 +44,8 @@ Este documento registra os resultados de uma sessao de testes exploratorios base
 - **Feedback Visual:** Adicionar um icone de carregamento (spinner) nos botoes de enviar para melhorar a percepcao de performance.
 - **Confirmacao de Delecao:** No perfil, adicionar um modal de "Tem certeza?" antes de excluir uma reserva para evitar cliques acidentais.
 - **Resumo do Dia:** No Dashboard, exibir um resumo de quantas mesas estao livres no total para a data selecionada.
+- **Acessibilidade:** Ajustar a aplicação para ser acessível a todos os tipos de usuários (seguindo as diretrizes WCAG).
+- **Ajuste de UI (Caixas de Seleção):** Redimensionar as caixas de seleção das mesas no Dashboard, que atualmente estão muito grandes e ocupando uma área excessiva do site.
 
 ---
 *Este relatorio documenta uma sessao focada em heuristica "O Caminho do Vilao", buscando acoes que o sistema nao deveria permitir.*

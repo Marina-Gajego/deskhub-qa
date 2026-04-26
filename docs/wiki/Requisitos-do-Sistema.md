@@ -12,7 +12,7 @@ O objetivo do sistema e permitir que colaboradores:
 - registrem reservas por data e horario;
 - acompanhem e removam suas proprias reservas.
 
-Este projeto foi concebido tambem como ambiente de estudos para QA manual, QA automatizado e automacao funcional.
+Este projeto foi concebido tambem como ambiente de estudos para testes manuais, automatizados e performance.
 
 ## 2. Objetivo do Produto
 
@@ -199,9 +199,6 @@ O sistema deve expor endpoints para:
 - criar reserva;
 - cancelar reserva.
 
-### RA04. Endpoint de documentacao
-
-O sistema deve expor endpoint para acesso ao JSON OpenAPI e a interface Swagger.
 
 ## 9. Requisitos Nao Funcionais
 
